@@ -1,0 +1,96 @@
+<！doctype html>
+<html lang =“ zh-cn”>
+<头>
+    <meta charset =“ utf-8”>
+    <title>信息存档查询系统</title>
+    <样式>
+        身体 {
+            字体家庭：Arial，sans-serif;
+            最大宽度：800px;
+            保证金：20px自动；
+            填充：20px;
+            线高：1.6;
+        }
+        .search-box {
+            宽度：100％；
+            填充：12px;
+            字体大小：16px;
+            边界：1px实心#DDD;
+            边界拉迪乌斯：24px;
+            边距底：20px;
+        }
+        .result-item {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+        .result-item img {
+            max-width: 200px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+        }
+        .disclaimer {
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            padding-top: 15px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .disclaimer strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #d9534f; /* 红色强调 */
+        }
+    </style>
+</head>
+<身体>
+    <h1> </h1>
+    
+    <！ -搜索框->
+    <input type =“ text” class =“ search-box”占位符=“：行为记录、考试：行为记录、考试）” id =“ searchInput”>
+
+    <！ -结果容器->
+    <div ID =“结果”>
+        <！-示例条目：抠pp->
+        <div class =“ result-item” data-keywords =“行为记录个人卫生”>
+            <h3> 2023年行为观察记录 -编号001 </h3>
+            <p>记录描述：观察到疑似非规范卫生习惯行为，具体表现为... （此处省略细节）< / p >
+            < ！ -图片占位- >
+            < div  class = “图像 -地位持有人” >
+                态
+                <p> [图片待补充] < / p >
+            </ div >
+        </ div >
+
+        < ！ -示例条目：考试->  - >
+        < div  class = “ result-item” data-keywords = “ 学业记录考试”  >
+            <H3> 2022年考场监控记录 -编号002 < / h3 >
+            <p>记录描述：某次考试中检测到异常行为，具体表现为... （此处省略细节）< / p >
+        </div>
+    </div>
+
+    < ！ -免责声明- >
+    < div  class = “免责声明” >
+        <strong>免责声明：< / strong >
+        <p> 1 。，< / p >
+        <p> 2。，仅供娱乐或学术研究使用，< / p >
+        <p> 3 。。，请联系管理员：<a href =“ mailto：admin@example.com”> admin@example.com < / a > 。 < / p >  
+        <p> 4 。，< / p >
+    </ div >
+
+    <script>​​
+        //简易搜索功能
+        document.getElementById（'searchInput'）。addeventListener（'input'，函数（ e（e）{
+            const searchTerm = e.target.value.tolowercase（）;
+            document.queryselectorall（'。'结果 - 项目'。
+                const关键字= item.dataset.keywords.tolowercase（）;
+                物品。风格。display =关键字。cludes  （搜索术语）？''' ：'无' ;
+            （}））；
+        （} ） ;
+    </ script >
+</ body >
+        </html>
